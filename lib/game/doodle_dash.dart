@@ -36,7 +36,6 @@ class DoodleDash extends FlameGame
     temp = _world.size.y;
     // temp  = 0;
     dash.megaJump();
-    debugMode = true;
   }
 
   @override
@@ -78,7 +77,6 @@ class DoodleDash extends FlameGame
     if (dash.position.y > camera.viewport.position.y + temp + 3 * dash.size.y + screenBufferSpace){
       onLose();
     }
-    debugMode = true;
   }
 
   void onLose() {
