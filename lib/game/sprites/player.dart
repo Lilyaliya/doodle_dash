@@ -21,9 +21,9 @@ class Player extends SpriteGroupComponent<DashDirection> with HasGameRef<DoodleD
   // parameter for defining if player moves right or left
   int _hAxisInput = 0;
 
-  final double _moveAxisSpeed = 200;
-  final double _gravity =3;
-  final double _jumpSpeed = 300;
+  final double _moveAxisSpeed = 400;
+  final double _gravity =7;
+  final double _jumpSpeed = 700;
 
   @override
   FutureOr<void> onLoad() async{

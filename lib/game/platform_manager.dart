@@ -52,8 +52,8 @@ class PlatformManager extends Component with HasGameRef<DoodleDash> {
       final newPlat = Platform(position: Vector2(newPlatX, newPlatY));
       add(newPlat);
       platforms.add(newPlat);
-      // final lowestPlat = platforms.removeAt(0);
-      // lowestPlat.removeFromParent();
+      final lowestPlat = platforms.removeAt(0);
+      lowestPlat.removeFromParent();
     }
     super.update(dt);
   }
